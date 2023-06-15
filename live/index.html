@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html><head>
+  <title>Jonathan Rhodes Live</title>
+   
+  <link rel="stylesheet" href="https://jonathanrhodes.nl/sass/main.css?1686838255" />
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="description" content="Jonathan Rhodes writes and performs songs with little pretence" />
+
+  
+  <link rel="apple-touch-icon" href="/favicon.png" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <meta content="Jonathan Rhodes Live" property="og:site_name" />
+  <meta content="Jonathan Rhodes Live" property="og:title" />
+  <meta content="website" property="og:type" />
+  <meta content="https://jonathanrhodes.nl/live/" property="og:url" />
+  <meta content="Jonathan Rhodes writes and performs songs with little pretence" property="og:description" />
+  <meta content="https://jonathanrhodes.nl/photos/jr-portrait-1.jpeg"
+  property="og:image"/>
+
+  <meta
+    name="facebook-domain-verification"
+    content="9hzrlr48c8jxxhwmw2hyw8hhf91tar"
+  />
+
+  
+   
+  <script
+    type="text/javascript"
+    src="/main.js?1686838255"
+    defer
+  ></script>
+
+  
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-TLJGJGF2VB"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-TLJGJGF2VB");
+  </script>
+
+  
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "714160709315339");
+    fbq("track", "PageView");
+  </script>
+  <noscript
+    ><img
+      height="1"
+      width="1"
+      style="display: none"
+      src="https://www.facebook.com/tr?id=714160709315339&ev=PageView&noscript=1"
+  /></noscript>
+  
+  
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "614488356301311");
+    fbq("track", "PageView");
+  </script>
+  <noscript
+    ><img
+      height="1"
+      width="1"
+      style="display: none"
+      src="https://www.facebook.com/tr?id=614488356301311&ev=PageView&noscript=1"
+  /></noscript>
+  
+</head>
+<body class=""><div id="content">
+    
+<!-- <iframe src="https://player.vimeo.com/video/341588253?&title=0&color=456990&byline=0&portrait=0&playsinline=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+<div class="live">
+  
+  <div id="overlay-start" class="overlay visible">
+    <div>
+      <p mb-1>
+        Bij het nummer <i>Time & Money</i> hoort een live videoclip op je telefoon.        
+      </p>
+      <div class="steps">
+        <div>
+          <p>
+            1. Wij spelen
+          </p>
+          <img class="drums" src="/drums.webp"/>
+        </div>
+        <div class="arrow-container">
+          <span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M216.464 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887L209.393 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L233.434 36.465c-4.686-4.687-12.284-4.687-16.97 0z"/></svg>
+          </span>
+        </div>
+        <div>
+          <p>
+            2. Jij drukt op deze knop:
+          </p>
+          <a id="start-button" href="#" onclick="startVideo()">
+            Start!
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- warning for portrait phones -->
+  <div id="overlay-orientation" class="overlay">
+    <p>
+      Draai je scherm een kwartslag. Dat staat een stuk beter.
+    </p>
+    <div class="phone-image">
+      <div class="inner"></div>
+    </div>
+  </div>
+
+  <div id="player"></div>
+
+  <div id="overlay-end" class="overlay">
+    <p>
+      Vond je dit te gek? Volg ons om op de hoogte te blijven!
+    </p>
+
+    <div class="listen-buttons">
+      <a
+        id="spotify"
+        class="listen-button"
+        href="../landing/spotify/"
+        target="_blank"
+      >
+        <div class="logo"><img src="/logos/spotify.png" /></div>
+        <div class="button">Follow</div>
+      </a>
+      <a
+        id="youtube"
+        class="listen-button"
+        href="../landing/youtube/"
+        target="_blank"
+      >
+        <div class="logo"><img src="/logos/youtube.png" /></div>
+        <div class="button">Subscribe</div>
+      </a>
+      <a
+        id="instagram"
+        class="listen-button"
+        href="../landing/instagram/"
+        target="_blank"
+      >
+        <div class="logo"><img src="/logos/instagram.png" /></div>
+        <div class="button">Follow</div>
+      </a>
+      <a
+        id="facebook"
+        class="listen-button"
+        href="../landing/facebook/"
+        target="_blank"
+      >
+        <div class="logo"><img src="/logos/facebook.png" /></div>
+        <div class="button">Like</div>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+
+  checkOrientation()
+  window.addEventListener("resize", checkOrientation);
+
+  // 2. This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // 3. This function creates an <iframe> (and YouTube player)
+  //    after the API code downloads.
+  var player;
+  var iframe;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      videoId: 'D_9uSH5_Yo8',
+      playerVars: {
+        // controls: 0,
+        modestbranding: 1,
+        rel: 0 //show only related videos from own channel
+
+      },
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+
+  // 4. The API will call this function when the video player is ready.
+  function onPlayerReady(event) {
+    iframe = document.getElementById('player');
+  }
+
+  // 5. The API calls this function when the player's state changes.
+  //    The function indicates that when playing a video (state=1),
+  //    the player should play for six seconds and then stop.
+  function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.ENDED) {
+      this.showEndOverlay()
+    }
+  }
+
+  function startVideo() {
+    player.playVideo();
+    requestFullScreen();
+    hideOverlay('overlay-start')
+  }
+
+  function stopVideo() {
+    player.stopVideo();
+  }
+
+  function requestFullScreen(){
+
+    var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+    if (requestFullScreen) {
+      requestFullScreen.bind(iframe)();
+    }
+
+  }
+
+  function endFullScreen(){
+
+    document.exitFullscreen();
+
+  }
+
+  function showEndOverlay(){
+    endFullScreen();
+    showOverlay('overlay-end')
+  }
+
+  // Orientation
+
+  function checkOrientation(){
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    if (w < h){
+      showOrientationWarning();
+    } else {
+      hideOverlay('overlay-orientation');
+    }
+  }
+
+  function showOrientationWarning() {
+    
+    showOverlay('overlay-orientation');
+
+    // auto hide after a while
+    setTimeout(() => {
+      hideOverlay('overlay-orientation');
+    }, 10000)
+  }
+
+  function showOverlay(id){
+    var overlay = document.getElementById(id);
+    overlay.classList.add('visible');
+  }
+
+  function hideOverlay(id){
+    var overlay = document.getElementById(id);
+    overlay.classList.remove('visible');
+  }
+
+</script>
+
+        </div></body>
+</html>
