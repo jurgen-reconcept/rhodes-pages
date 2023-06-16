@@ -71,9 +71,16 @@
       formData.get("last_name"),
       formData.get("tag") || tag
     ).then((r) => {
-      console.log(r);
-      trackNewsletterSubscribed();
-      showSignupSuccess();
+      return r.json().then((json) => {
+        var customer = json.customerCreate.customer;
+        if (!!customer) {
+          trackNewsletterSubscribed();
+          showSignupSuccess();
+        } else {
+          showSignupFailed();
+        }
+        return json.customerCreate.customer;
+      });
     }).catch((err) => console.error(err));
   }
   function postShopifyCustomer(email, firstName, lastName, tag) {
@@ -87,7 +94,9 @@
       Object.keys(params).filter((k) => !!params[k]).map((key) => key + "=" + params[key]).join("&")
     );
     return fetch(
-      // 'http://127.0.0.1:5001/jonathanrhodes-e228d/us-central1/addShopifyCustomer?'+paramString,
+      // local testing:
+      // "http://127.0.0.1:5001/jonathanrhodes-e228d/us-central1/addShopifyCustomer?" +
+      //   paramString,
       "https://addshopifycustomer-n6ni3yii7q-uc.a.run.app?" + paramString,
       {
         method: "GET",
@@ -100,6 +109,15 @@
     if (elm) {
       for (el of elm) {
         el.classList.add("signup-success");
+        el.classList.remove("signup-loading");
+      }
+    }
+  }
+  function showSignupFailed() {
+    var elm = document.getElementsByClassName("signup-form");
+    if (elm) {
+      for (el of elm) {
+        el.classList.add("signup-failed");
         el.classList.remove("signup-loading");
       }
     }

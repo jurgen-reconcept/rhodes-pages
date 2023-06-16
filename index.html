@@ -3,7 +3,7 @@
 	<meta name="generator" content="Hugo 0.110.0">
   <title>Jonathan Rhodes</title>
    
-  <link rel="stylesheet" href="https://jonathanrhodes.nl/sass/main.css?1686918102" />
+  <link rel="stylesheet" href="https://jonathanrhodes.nl/sass/main.css?1686923035" />
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,7 +32,7 @@
    
   <script
     type="text/javascript"
-    src="/main.js?1686918102"
+    src="/main.js?1686923035"
     defer
   ></script>
 
@@ -215,6 +215,12 @@
                 >Go to store now!</a
               >
             </div>
+            <div class="notification notification-negative signup-failed">
+              Whoops! Looks like you were already signed up. You can still
+              <a href="https://store.jonathanrhodes.nl" target="_blank"
+                >go to the store</a
+              >
+            </div>
             <div class="notification signup-loading">Just a moment...</div>
           </form>
         </div>
@@ -223,8 +229,10 @@
         
           function submitNewsletter(event){
             submitSignupForm(event, 'newsletter-signup')
-            .then(() => {
-              navigateToSuccessPage();
+            .then((customer) => {
+              if(!!customer){
+                navigateToSuccessPage();
+              }
             })
           }
         
@@ -627,6 +635,12 @@
               >Go to store now!</a
             >
           </div>
+          <div class="notification notification-negative signup-failed">
+            Whoops! Looks like you were already signed up. You can still
+            <a href="https://store.jonathanrhodes.nl" target="_blank"
+              >go to the store</a
+            >
+          </div>
           <div class="notification signup-loading">Just a moment...</div>
         </form>
       </div>
@@ -635,8 +649,10 @@
       
         function submitNewsletter(event){
           submitSignupForm(event, 'newsletter-signup')
-          .then(() => {
-            navigateToSuccessPage();
+          .then((customer) => {
+            if(!!customer){
+              navigateToSuccessPage();
+            }
           })
         }
       

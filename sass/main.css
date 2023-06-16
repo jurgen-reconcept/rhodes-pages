@@ -353,7 +353,7 @@ a:not(.bit-details) {
 .notification {
   padding: 15px;
   margin-bottom: 10px;
-  background: rgba(204, 69, 72, 0.5); }
+  background: rgba(29, 53, 87, 0.2); }
   .notification.notification-positive {
     color: #00a676;
     background: #d4f5eb; }
@@ -836,24 +836,31 @@ input[type="submit"] {
 .signup-form .signup-success {
   display: none; }
 
+.signup-form .signup-failed {
+  display: none; }
+
 .signup-form .signup-loading {
   display: none; }
 
 .signup-form.signup-success .signup-success {
   display: block; }
 
-.signup-form.signup-success .signup-loading {
+.signup-form.signup-success .signup-loading,
+.signup-form.signup-success .main-form {
   display: none; }
 
-.signup-form.signup-success .main-form {
+.signup-form.signup-failed .signup-failed {
+  display: block; }
+
+.signup-form.signup-failed .signup-loading,
+.signup-form.signup-failed .main-form {
   display: none; }
 
 .signup-form.signup-loading .signup-loading {
   display: block; }
 
-.signup-form.signup-loading .signup-success {
-  display: none; }
-
+.signup-form.signup-loading .signup-success,
+.signup-form.signup-loading .signup-failed,
 .signup-form.signup-loading .main-form {
   display: none; }
 
