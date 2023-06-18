@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="description" content="Jonathan Rhodes&#39; new EP Dirt is out now" />
+  <meta name="description" content="Jonathan Rhodes&#39; EP Dirt" />
 
   
   <link rel="apple-touch-icon" href="/favicon.png" />
@@ -17,8 +17,8 @@
   <meta content="Jonathan Rhodes - Dirt" property="og:site_name" />
   <meta content="Jonathan Rhodes - Dirt" property="og:title" />
   <meta content="website" property="og:type" />
-  <meta content="https://jonathanrhodes.nl/landing/dirt/" property="og:url" />
-  <meta content="Jonathan Rhodes&#39; new EP Dirt is out now" property="og:description" />
+  <meta content="https://jonathanrhodes.nl/ad/dirt-download-nl/" property="og:url" />
+  <meta content="Jonathan Rhodes&#39; EP Dirt" property="og:description" />
   <meta content="https://jonathanrhodes.nl//cover-art/dirt.png"
   property="og:image"/>
 
@@ -125,34 +125,123 @@
 <body class="dark"><div id="content">
     
 <div class="container">
-  <section class="center">
+  <!-- Presave -->
+  <section>
     <div class="section-content center">
-      <img class="cover-art light-shadow" src="/cover-art/dirt-small.png" />
+      <!-- <h2>Jonathan Rhodes - Dirt</h2> -->
+
+      <p>
+        <b class="col-brand">Alleen vandaag geldig!</b>
+      </p>
+      <div class="presave-signup-form">
+        <h3>Download gratis mijn muziek</h3>
+        <p>Vul je email in en krijg:</p>
+        <ul class="left">
+          <li>je gratis download link</li>
+          <li>a <span class="col-brand">50% korting op de CD</span></li>
+        </ul>
+
+        <div class="signup-form">
+  <form method="post" onsubmit="submitPresaveForm(event)">
+    <div class="main-form">
+      
+      <input type="hidden" name="tag" value="download-dirt"
+      required />
+      <div class="form-row form-row-flex">
+        <input
+          placeholder="Your email address..."
+          type="email"
+          name="email"
+          required
+        />
+        <button type="submit">Download nu</button>
+      </div>
+
+      
+    </div>
+
+    <div class="signup-success">
+
+        <div class="notification notification-positive">
+          Bedankt. Je krijgt je download zo snel mogelijk. Bekijk ondertussen
+          <a
+            class="button"
+            href="https://store.jonathanrhodes.nl"
+            target="_blank"
+          >
+            mijn webshop
+          </a>
+        </div>
+
+        </div>
+
+    <div class="notification notification-negative signup-failed">
+      Whoops! Looks like you were already signed up. You can still
+      <a href="https://store.jonathanrhodes.nl" target="_blank"
+        >go to the store</a
+      >
+    </div>
+
+    <div class="signup-loading">
+      <div class="notification">Just a moment...</div>
+    </div>
+  </form>
+</div>
+
+<script type="text/JavaScript">
+
+  function submitPresaveForm(event){
+    submitSignupForm(event)
+  }
+
+  window.submitPresaveForm = submitPresaveForm;
+</script>
+
+
+        <p>
+          Als echte muziekliefhebber steun je onafhankelijke artiesten zoals ik.
+          Bedankt! 🤠
+        </p>
+      </div>
     </div>
   </section>
 
   <section class="center">
     <div class="section-content center">
-      <div class="listen-buttons">
-        <a class="listen-button" href="./spotify/" target="_blank">
-          <div class="logo"><img src="/logos/spotify.png" /></div>
-          <div class="button">Listen</div>
-        </a>
-        <a class="listen-button" href="./apple/" target="_blank">
-          <div class="logo"><img src="/logos/apple-dark.png" /></div>
-          <div class="button">Listen</div>
-        </a>
-        <a
-          class="listen-button"
-          href="https://store.jonathanrhodes.nl"
-          target="_blank"
-        >
-          <div class="logo"><img src="/logos/store.png" /></div>
-          <div class="button accent">Get the CD</div>
-        </a>
-      </div>
+      <p>Jouw gratis download: alle tracks van Jonathan Rhodes - Dirt</p>
+      <img class="cover-art light-shadow" src="/cover-art/dirt-small.png" />
     </div>
   </section>
+
+  <!-- <section>
+    <div class="section-content center">
+      <p>In the meantime, find more music on your favourite platform:</p>
+
+      <div class="listen-buttons">
+        <a class="listen-button" href="/landing/spotify" target="_blank">
+          <div class="logo"><img src="/logos/spotify.png" /></div>
+          <div class="button">Follow</div>
+        </a>
+        <a class="listen-button" href="/landing/apple" target="_blank">
+          <div class="logo"><img src="/logos/apple-dark.png" /></div>
+          <div class="button">Follow</div>
+        </a>
+        <a class="listen-button" href="/landing/youtube" target="_blank">
+          <div class="logo"><img src="/logos/youtube-dark.png" /></div>
+          <div class="button">Follow</div>
+        </a>
+        <a class="listen-button" href="/landing/instagram" target="_blank">
+          <div class="logo"><img src="/logos/instagram.png" /></div>
+          <div class="button">Follow</div>
+        </a>
+        <a class="listen-button" href="/landing/facebook" target="_blank">
+          <div class="logo"><img src="/logos/facebook.png" /></div>
+          <div class="button">Follow</div>
+        </a>
+      </div>
+
+    </div>
+  </section> -->
 </div>
 
 
