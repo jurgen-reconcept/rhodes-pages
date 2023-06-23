@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-  <title>Jonathan Rhodes - Hey Sister - Redirecting to YouTube</title>
+  <title>Jonathan Rhodes - Wonderful on Spotify</title>
    
   <link rel="stylesheet" href="https://jonathanrhodes.nl/sass/main.css?1687494775" />
 
@@ -8,18 +8,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="description" content="Jonathan Rhodes&#39; new single Hey Sister is out now" />
+  <meta name="description" content="Listen to Jonathan Rhodes on Spotify" />
 
   
   <link rel="apple-touch-icon" href="/favicon.png" />
   <link rel="icon" type="image/png" href="/favicon.png" />
 
-  <meta content="Jonathan Rhodes - Hey Sister - Redirecting to YouTube" property="og:site_name" />
-  <meta content="Jonathan Rhodes - Hey Sister - Redirecting to YouTube" property="og:title" />
+  <meta content="Jonathan Rhodes - Wonderful on Spotify" property="og:site_name" />
+  <meta content="Jonathan Rhodes - Wonderful on Spotify" property="og:title" />
   <meta content="website" property="og:type" />
-  <meta content="https://jonathanrhodes.nl/ad/hey-sister/redirect/youtube/" property="og:url" />
-  <meta content="Jonathan Rhodes&#39; new single Hey Sister is out now" property="og:description" />
-  <meta content="https://jonathanrhodes.nl//cover-art/hey-sister.jpg"
+  <meta content="https://jonathanrhodes.nl/ad/spotify-wonderful/" property="og:url" />
+  <meta content="Listen to Jonathan Rhodes on Spotify" property="og:description" />
+  <meta content="https://jonathanrhodes.nl/cover-art/wonderful.jpg"
   property="og:image"/>
 
   <meta
@@ -122,18 +122,34 @@
   /></noscript>
   
 </head>
-<body class=""><div id="content">
+<body class="dark"><div id="content">
     
-<script type="text/JavaScript">
+<div class="container container-landing">
+  <section class="center">
+    <img class="avatar" src="/ava-small.jpg" />
+  </section>
+  <section class="center">
+    <div class="listen-buttons expandable">
+      <a
+        id="spotify"
+        class="listen-button"
+        href="./redirect/spotify/"
+        onclick="trackAdRedirectClick('Spotify Profile')"
+      >
+        <div class="logo"><img src="/logos/spotify.png" /></div>
+        <div class="button">Listen now</div>
+      </a>
+    </div>
+  </section>
+</div>
 
+<script type="text/JavaScript">
   // set timeout to give GA a chance to load
   setTimeout(()=>{
-    redirectToPage(
-      'Hey Sister YouTube',
-      `https://youtu.be/CE7JEG7YmUA`
-    )
+    trackAdLandingArrived('Spotify Profile Ad Landing')
   }, 300)
 </script>
+
 
         </div></body>
 </html>
