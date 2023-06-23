@@ -23,7 +23,7 @@
 body {
   margin: 0;
   font-weight: lighter;
-  background: #fdead5; }
+  background: white; }
   body.dark {
     background: black; }
 
@@ -404,9 +404,9 @@ a:not(.bit-details) {
 
 img.logo {
   max-width: 100%;
-  width: 400px;
+  width: 300px;
   opacity: 0;
-  animation: fade-in 5s;
+  animation: fade-in 2s;
   animation-fill-mode: both;
   animation-delay: 0.3s;
   position: relative;
@@ -414,7 +414,7 @@ img.logo {
 
 .logo-subtitle {
   opacity: 0;
-  animation: fade-in 3s;
+  animation: fade-in 1s;
   animation-fill-mode: both;
   animation-delay: 1.3s;
   position: relative;
@@ -642,6 +642,8 @@ section {
     flex-basis: 50%; }
     section .text-container h2 {
       line-height: 1.2em; }
+  section.bg {
+    background: #fdead5; }
   section.accent {
     background-color: #cc4548; }
   section.accent2 {
