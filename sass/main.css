@@ -170,6 +170,9 @@ a:not(.bit-details) {
   text-decoration: underline dotted;
   padding-left: 4px;
   padding-right: 4px; }
+  a:not(.bit-details).img-link {
+    padding-left: 0;
+    padding-right: 0; }
   a:not(.bit-details).icon {
     color: #cc4548;
     font-size: 20px;
@@ -349,6 +352,9 @@ a:not(.bit-details) {
 
 .photo-train-side-3 {
   background: url(/photos/train/side-3.jpg); }
+
+.photo-rodehert {
+  background: url(/photos/rodehertbord.jpeg); }
 
 .notification {
   padding: 15px;
