@@ -2,7 +2,7 @@
 <html><head>
   <title>Jonathan Rhodes</title>
    
-  <link rel="stylesheet" href="https://jonathanrhodes.nl/sass/main.css?1696534649" />
+  <link rel="stylesheet" href="https://jonathanrhodes.nl/sass/main.css?1699694868" />
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,7 +31,7 @@
    
   <script
     type="text/javascript"
-    src="/main.js?1696534649"
+    src="/main.js?1699694868"
     defer
   ></script>
 
@@ -124,20 +124,34 @@
 </head>
 <body class=""><div id="content">
     
-<div class="container">
-  <div class="right">
-    <a href="/"> Nederlands </a>
+<div class="fold-video">
+  <div class="youtube-container">
+    <iframe
+      width="100%"
+      height="100%"
+      src="https://www.youtube-nocookie.com/embed/6hPkcls6Tcs?autoplay=1&mute=1&color=white&controls=1&loop=1&playsinline=1&disablekb=1&playlist=6hPkcls6Tcs"
+      frameborder="0"
+      allow="autoplay; accelerometer; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
   </div>
-  <div class="center">
+
+  <div class="logo-container">
     <img class="logo" src="/logo/logo.svg" />
     <h1 class="hidden">Jonathan Rhodes</h1>
+  </div>
+</div>
 
-    <div class="menu">
-      <a href="#music">Music</a> | <a href="#bio">Bio</a> |
-      <a href="#shows">Shows</a> | <a href="#contact">Contact</a> |
-      <a href="https://store.jonathanrhodes.nl" target="_blank">Store</a> |
-      <a href="/epk" target="_blank">Press</a>
-    </div>
+
+<div class="menu-container">
+  <div class="menu">
+    <a href="#music">Music</a> | <a href="#bio">Bio</a> |
+    <a href="#shows">Shows</a> | <a href="#contact">Contact</a> |
+    <a href="https://store.jonathanrhodes.nl" target="_blank">Store</a> |
+    <a href="/epk" target="_blank">Press</a>
+  </div>
+  <div class="menu-right">
+    <a href="/"> Nederlands </a>
   </div>
 </div>
 
@@ -182,7 +196,7 @@
 
   <section>
     <div class="section-content text-container">
-      <h2 id="contact">
+      <h2>
         Subscribe to my newsletter and get a
         <span class="col-brand">20% discount</span>
       </h2>
@@ -532,73 +546,11 @@
 
   <section>
     <div class="section-content center">
-      <h2 id="contact">Become an Insider</h2>
+      <h2>Become an Insider</h2>
       <p>
         Stay ahead of the curve by signing up to the Insider Newsletter. I send
         out new demos and exclusive behind the scenes footage for those who
         can't wait!
-      </p>
-      <div class="signup-form">
-        <form method="post" onsubmit="submitNewsletter(event)">
-          <div class="main-form">
-            <div class="form-row form-row-flex">
-              <input
-                placeholder="Your email address..."
-                type="email"
-                name="email"
-                required
-              />
-              <button type="submit">Subscribe</button>
-            </div>
-          </div>
-          <div class="notification notification-positive signup-success">
-            Thanks for signing up! You'll receive an email with your store discount
-            code.
-            <a href="https://store.jonathanrhodes.nl" target="_blank"
-              >Go to store now!</a
-            >
-          </div>
-          <div class="notification notification-negative signup-failed">
-            Whoops! Looks like you were already signed up. You can still
-            <a href="https://store.jonathanrhodes.nl" target="_blank"
-              >go to the store</a
-            >
-          </div>
-          <div class="notification signup-loading">Just a moment...</div>
-        </form>
-      </div>
-      
-      <script type="text/JavaScript">
-      
-        function submitNewsletter(event){
-          submitSignupForm(event, 'newsletter-signup')
-          .then((customer) => {
-            if(!!customer){
-              navigateToSuccessPage();
-            }
-          })
-        }
-      
-        function navigateToSuccessPage(){
-          
-          setTimeout(() => {
-            window.location.href="/newsletter-success"
-          }, 100)
-        }
-      
-        window.submitNewsletter = submitNewsletter;
-      </script>
-
-    </div>
-  </section>
-
-  <section>
-    <div class="section-content center">
-      <h2 id="contact">Word ook Insider</h2>
-      <p>
-        Stay ahead of the curve by signing up to the Insider Newsletter. Get out
-        exclusive content, shows in your area and a <b>20% discount</b> on your
-        first order in the <a href="https://store.jonathanrhodes.nl">store</a>!
       </p>
       <div class="signup-form">
         <form method="post" onsubmit="submitNewsletter(event)">
@@ -660,7 +612,7 @@
 
   <section>
     <div class="section-content">
-      <h2>Contact</h2>
+      <h2 id="contact">Contact</h2>
 
       <p class="center">
         Say hi: <a href="mailto:me@jonathanrhodes.nl">me@jonathanrhodes.nl</a>
@@ -734,7 +686,7 @@
     </g>
 </svg></div>
 
-<div class="spotify-player-container">
+<!-- <div class="spotify-player-container">
   <iframe
     src="https://open.spotify.com/embed/playlist/2SjCCpYUxq1PLvB1JYhiFZ"
     width="100%"
@@ -743,7 +695,7 @@
     allowtransparency="true"
     allow="encrypted-media"
   ></iframe>
-</div>
+</div> -->
 
 
         </div></body>
