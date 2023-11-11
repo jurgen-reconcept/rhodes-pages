@@ -65,18 +65,26 @@ body {
           flex: 0.5; } }
 .menu-container {
   margin: 0 auto;
-  padding: 40px 0;
-  width: 94%;
+  padding: 40px 20px;
+  width: 100%;
   max-width: 1000px;
   display: flex;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 99;
-  background: white; }
+  background: white;
+  flex-wrap: wrap; }
   .menu-container .menu-right {
     margin-left: auto; }
-
+  @media only screen and (max-width: 600px) {
+    .menu-container {
+      flex-direction: row-reverse; }
+      .menu-container .menu,
+      .menu-container .menu-right {
+        flex-basis: 100%; }
+      .menu-container .menu-right {
+        opacity: 0.5; } }
 .bird-container svg {
   display: block;
   width: 70px;
@@ -448,6 +456,7 @@ img.logo {
   flex-direction: column;
   color: white;
   max-height: 100vh;
+  max-height: 100vw;
   height: 700px;
   width: 100%; }
   .fold-video .youtube-container {
@@ -474,7 +483,7 @@ img.logo {
     opacity: 0; }
 
 .fold-photo {
-  margin: 50px auto;
+  margin: 0 auto;
   max-width: 1000px;
   max-height: 700px;
   background-position: center;
