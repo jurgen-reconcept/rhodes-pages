@@ -23,7 +23,7 @@
 body {
   margin: 0;
   font-weight: lighter;
-  background: white; }
+  background: #f9edd8; }
   body.dark {
     background: black; }
 
@@ -73,7 +73,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 99;
-  background: white;
+  background: #f9edd8;
   flex-wrap: wrap; }
   .menu-container .menu-right {
     margin-left: auto; }
@@ -125,10 +125,10 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
   font-weight: lighter;
-  color: black; }
+  color: #021716; }
   body a.listen-button {
-    border-color: #cc4548;
-    color: #dc8183; }
+    border-color: #dd9a28;
+    color: #e7b96a; }
   body.dark {
     color: white; }
     body.dark h2,
@@ -139,7 +139,7 @@ h2,
 h3 {
   text-align: center;
   font-family: "Staatliches";
-  color: black;
+  color: #021716;
   font-size: 36px;
   font-weight: normal;
   padding-top: 0;
@@ -154,7 +154,7 @@ h3 {
   font-size: 32px; }
 
 h4 {
-  color: black;
+  color: #021716;
   font-size: inherit;
   text-transform: uppercase; }
 
@@ -174,7 +174,7 @@ p {
   text-align: left !important; }
 
 .col-brand {
-  color: #cc4548; }
+  color: #dd9a28; }
 
 .muted {
   opacity: 0.4; }
@@ -184,7 +184,7 @@ p {
   font-size: x-small; }
 
 a:not(.bit-details) {
-  color: #cc4548;
+  color: #dd9a28;
   transition: color 0.2s, background-color 0.2s;
   text-decoration: underline dotted;
   padding-left: 4px;
@@ -193,18 +193,18 @@ a:not(.bit-details) {
     padding-left: 0;
     padding-right: 0; }
   a:not(.bit-details).icon {
-    color: #cc4548;
+    color: #dd9a28;
     font-size: 20px;
     margin: 10px;
     text-decoration: none !important; }
     a:not(.bit-details).icon .inline-svg {
       margin-right: 8px; }
     a:not(.bit-details).icon:hover {
-      color: #dc8183;
+      color: #e7b96a;
       background: none; }
   a:not(.bit-details):hover {
     text-decoration: none;
-    background-color: #cc4548;
+    background-color: #dd9a28;
     color: white; }
 
 .live [mb-1] {
@@ -274,111 +274,28 @@ a:not(.bit-details) {
     text-decoration: none;
     font-size: larger; }
 
-.photo-portrait-1 {
-  background: url(/photos/jr-portrait-1.jpeg); }
-
-.photo-portrait-2 {
-  background: url(/photos/jr-portrait-2.jpeg); }
-
-.photo-portrait-3 {
-  background: url(/photos/jr-portrait-3.jpeg); }
-
-.photo-portrait-4 {
-  background: url(/photos/jr-portrait-4.jpeg); }
-
-.photo-portrait-5 {
-  background: url(/photos/jr-portrait-5.jpeg); }
-
-.photo-portrait-6 {
-  background: url(/photos/jr-portrait-6.jpeg); }
-
-.photo-portrait-7 {
-  background: url(/photos/jr-portrait-7.jpeg); }
-
-.photo-guitar-1 {
-  background: url(/photos/jr-guitar-1.jpeg); }
-
-.photo-guitar-2 {
-  background: url(/photos/jr-guitar-2.jpeg); }
-
-.photo-guitar-3 {
-  background: url(/photos/jr-guitar-3.jpeg); }
-
-.photo-guitar-4 {
-  background: url(/photos/jr-guitar-4.jpeg); }
-
-.photo-broll-1 {
-  background: url(/photos/jr-broll-1.jpeg); }
-
-.photo-broll-2 {
-  background: url(/photos/jr-broll-2.jpeg); }
-
-.photo-broll-3 {
-  background: url(/photos/jr-broll-3.jpeg); }
-
-.photo-broll-4 {
-  background: url(/photos/jr-broll-4.jpeg); }
-
-.photo-live-1 {
-  background: url(/photos/bfg_closeup.jpg); }
-
-.photo-live-2 {
-  background: url(/photos/bfg_frontaal.jpg); }
+.photo-broll {
+  background: url(/photos/2023/jonathan-rhodes-2023-broll-1.jpg); }
 
 .photo-coffee {
   background: url(/photos/coffee.jpg); }
 
-.photo-esns2022 {
-  background: url(/photos/esns2022.jpeg);
-  background-position: center 30% !important; }
-
-.photo-camper-wide {
-  background: url(/photos/camper/camper.jpeg); }
-
-.photo-badjas {
-  background: url(/photos/camper/badjas1.jpeg);
-  background-position: center 30% !important; }
-
-.photo-train-guitar-wide {
-  background: url(/photos/train/guitar-wide.jpg); }
-
-.photo-train-guitar-1 {
-  background: url(/photos/train/guitar-1.jpg); }
-
-.photo-train-guitar-2 {
-  background: url(/photos/train/guitar-2.jpg); }
-
-.photo-train-back-1 {
-  background: url(/photos/train/back-1.jpeg); }
-
-.photo-train-back-2 {
-  background: url(/photos/train/back-2.jpg); }
-
-.photo-train-wide {
-  background: url(/photos/train/wide.jpg); }
-
-.photo-train-wide-2 {
-  background: url(/photos/train/wide-2.jpg); }
-
-.photo-train-portrait-1 {
-  background: url(/photos/train/portrait-1.jpeg); }
-
-.photo-train-side-1 {
-  background: url(/photos/train/side-1.jpg); }
-
-.photo-train-side-2 {
-  background: url(/photos/train/side-2.jpg); }
-
-.photo-train-side-3 {
-  background: url(/photos/train/side-3.jpg); }
-
 .photo-rodehert {
   background: url(/photos/rodehertbord.jpeg); }
+
+.photo-solo-1 {
+  background: url(/photos/2023/jonathan-rhodes-2023-solo-1.jpg); }
+
+.photo-band-1 {
+  background: url(/photos/2023/jonathan-rhodes-2023-band-1.jpg); }
+
+.photo-band-3 {
+  background: url(/photos/2023/jonathan-rhodes-2023-band-3.jpg); }
 
 .notification {
   padding: 15px;
   margin-bottom: 10px;
-  background: rgba(29, 53, 87, 0.2); }
+  background: #d4f5eb; }
   .notification.notification-positive {
     color: #00a676;
     background: #d4f5eb; }
@@ -398,18 +315,18 @@ a:not(.bit-details) {
     border: 1px solid #999;
     border-radius: 1px;
     background: white;
-    color: black;
+    color: #021716;
     outline: none;
     width: 100%; }
     .form-row input:focus {
-      color: #cc4548;
-      border-color: #cc4548; }
+      color: #dd9a28;
+      border-color: #dd9a28; }
 
 .presave-signup-form {
   padding: 20px;
   background-color: white;
   border-radius: 2px;
-  color: black; }
+  color: #021716; }
 
 .form-row-flex {
   display: flex; }
@@ -533,45 +450,6 @@ img.logo {
     animation-fill-mode: both;
     animation-delay: 0.8s; }
 
-.fold-wheels {
-  overflow: visible; }
-  .fold-wheels .wheels-container {
-    transform: rotate(-5deg);
-    position: absolute;
-    width: 400px;
-    height: 200px;
-    bottom: -120px; }
-    .fold-wheels .wheels-container .wheels-h1 {
-      position: absolute;
-      left: 0px;
-      font-family: "Staatliches";
-      font-size: 58px;
-      font-weight: normal;
-      line-height: 1em;
-      margin: 0;
-      padding: 10px 15px;
-      background: white;
-      color: #457b9d;
-      display: inline-block; }
-      .fold-wheels .wheels-container .wheels-h1 .brand {
-        color: #cc4548;
-        line-height: inherit; }
-      .fold-wheels .wheels-container .wheels-h1.part-2 {
-        position: absolute;
-        left: 150px;
-        top: 90px; }
-  .fold-wheels img.camper {
-    max-width: 100%;
-    width: 400px;
-    opacity: 0;
-    animation: drive-in 1s;
-    animation-fill-mode: both;
-    animation-delay: 0.3s;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    position: relative;
-    z-index: 1;
-    top: 150px; }
-
 .tiles {
   display: flex;
   flex-wrap: wrap;
@@ -657,7 +535,7 @@ img.full-width {
   position: relative; }
 
 .separator {
-  border-bottom: 1px solid #457b9d; }
+  border-bottom: 1px solid #dd9a28; }
 
 section {
   margin-bottom: 50px;
@@ -704,14 +582,16 @@ section {
     section .text-container h2 {
       line-height: 1.2em; }
   section.bg {
-    background: #fdead5; }
+    background: #f9edd8; }
   section.accent {
-    background-color: #cc4548; }
+    background-color: #dd9a28; }
   section.accent2 {
-    background-color: #457b9d; }
+    background-color: #6b3123; }
   section.accent3 {
-    background-color: #1d3557; }
-  section.accent, section.accent2, section.accent3 {
+    background-color: #dd9a28; }
+  section.rode-hert {
+    background-color: #cc4548; }
+  section.accent, section.accent2, section.accent3, section.rode-hert {
     color: white; }
     section.accent h2,
     section.accent h3,
@@ -719,20 +599,15 @@ section {
     section.accent2 h3,
     section.accent2 h4, section.accent3 h2,
     section.accent3 h3,
-    section.accent3 h4 {
+    section.accent3 h4, section.rode-hert h2,
+    section.rode-hert h3,
+    section.rode-hert h4 {
       color: white; }
-    section.accent a, section.accent2 a, section.accent3 a {
+    section.accent a, section.accent2 a, section.accent3 a, section.rode-hert a {
       color: rgba(255, 255, 255, 0.7);
       text-decoration: underline; }
-      section.accent a:hover, section.accent2 a:hover, section.accent3 a:hover {
+      section.accent a:hover, section.accent2 a:hover, section.accent3 a:hover, section.rode-hert a:hover {
         color: white; }
-  section.esns {
-    background-color: #e94252;
-    color: #fed46e; }
-    section.esns h2 {
-      color: #fed46e; }
-    section.esns img {
-      max-width: 100%; }
 
 button,
 a.button,
@@ -740,7 +615,7 @@ input[type="submit"] {
   display: inline-block;
   border: none;
   text-decoration: none !important;
-  background: #cc4548;
+  background: #dd9a28;
   color: white;
   padding: 10px 20px;
   border-radius: 2px;
@@ -753,22 +628,17 @@ input[type="submit"] {
   a.button.outline,
   input[type="submit"].outline {
     background-color: transparent;
-    border: 1px solid #cc4548;
-    color: #cc4548; }
+    border: 1px solid #dd9a28;
+    color: #dd9a28; }
   button.brand,
   a.button.brand,
   input[type="submit"].brand {
-    background: #cc4548; }
-  button.esns,
-  a.button.esns,
-  input[type="submit"].esns {
-    background-color: #e94252;
-    color: #fed46e; }
+    background: #dd9a28; }
   button.white,
   a.button.white,
   input[type="submit"].white {
     background-color: white;
-    color: #cc4548; }
+    color: #dd9a28; }
     button.white.outline,
     a.button.white.outline,
     input[type="submit"].white.outline {
@@ -794,7 +664,7 @@ input[type="submit"] {
   input[type="submit"]:active,
   input[type="submit"]:focus,
   input[type="submit"]:hover {
-    background: #dc8183; }
+    background: #e7b96a; }
   button.disabled,
   a.button.disabled,
   input[type="submit"].disabled {
@@ -822,17 +692,17 @@ input[type="submit"] {
       flex-grow: 0;
       width: 140px;
       border-radius: 2px;
-      border: 1px solid #cc4548;
+      border: 1px solid #dd9a28;
       padding: 7px;
       margin-left: 20px;
       transition: background-color 0.3s; }
       .listen-buttons a.listen-button .button.accent {
-        background-color: #cc4548;
+        background-color: #dd9a28;
         color: white; }
     .listen-buttons a.listen-button:hover, .listen-buttons a.listen-button.active {
       background-color: inherit; }
       .listen-buttons a.listen-button:hover .button, .listen-buttons a.listen-button.active .button {
-        background-color: #cc4548;
+        background-color: #dd9a28;
         color: white; }
 
 .spotify-player-container {
@@ -850,7 +720,7 @@ input[type="submit"] {
 
 .youtube-container {
   padding: 2px;
-  background: #cc4548;
+  background: #dd9a28;
   width: 300px;
   max-width: 300px;
   height: 168.75px; }

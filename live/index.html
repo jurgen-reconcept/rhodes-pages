@@ -2,7 +2,7 @@
 <html><head>
   <title>Jonathan Rhodes Live</title>
    
-  <link rel="stylesheet" href="https://jonathanrhodes.nl/sass/main.css?1700044103" />
+  <link rel="stylesheet" href="https://jonathanrhodes.nl/sass/main.css?1701628740" />
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,7 +19,7 @@
   <meta content="website" property="og:type" />
   <meta content="https://jonathanrhodes.nl/live/" property="og:url" />
   <meta content="Jonathan Rhodes writes and performs songs with little pretence" property="og:description" />
-  <meta content="https://jonathanrhodes.nl/photos/jr-portrait-1.jpeg"
+  <meta content="https://jonathanrhodes.nl/photos/2023/jonathan-rhodes-2023-solo-1.jpg"
   property="og:image"/> 
 
   <meta
@@ -31,7 +31,7 @@
    
   <script
     type="text/javascript"
-    src="/main.js?1700044103"
+    src="/main.js?1701628740"
     defer
   ></script>
 
@@ -126,41 +126,30 @@
     
 <!-- <iframe src="https://player.vimeo.com/video/341588253?&title=0&color=456990&byline=0&portrait=0&playsinline=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
 <div class="live">
-  
   <div id="overlay-start" class="overlay visible">
     <div>
       <p mb-1>
-        Bij het nummer <i>Time & Money</i> hoort een live videoclip op je telefoon.        
+        Bij het nummer <i>Time & Money</i> hoort een live videoclip op je
+        telefoon.
       </p>
       <div class="steps">
         <div>
-          <p>
-            1. Wij spelen
-          </p>
-          <img class="drums" src="/drums.webp"/>
+          <p>1. Wij spelen</p>
+          <img class="drums" src="/drums.webp" />
         </div>
-        <div class="arrow-container">
-          <span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M216.464 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887L209.393 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L233.434 36.465c-4.686-4.687-12.284-4.687-16.97 0z"/></svg>
-          </span>
-        </div>
+        <div class="arrow-container"><span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M216.464 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887L209.393 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L233.434 36.465c-4.686-4.687-12.284-4.687-16.97 0z"/></svg>
+</span></div>
         <div>
-          <p>
-            2. Jij drukt op deze knop:
-          </p>
-          <a id="start-button" href="#" onclick="startVideo()">
-            Start!
-          </a>
+          <p>2. Jij drukt op deze knop:</p>
+          <a id="start-button" href="#" onclick="startVideo()"> Start! </a>
         </div>
       </div>
-      
     </div>
   </div>
 
   <!-- warning for portrait phones -->
   <div id="overlay-orientation" class="overlay">
-    <p>
-      Draai je scherm een kwartslag. Dat staat een stuk beter.
-    </p>
+    <p>Draai je scherm een kwartslag. Dat staat een stuk beter.</p>
     <div class="phone-image">
       <div class="inner"></div>
     </div>
@@ -169,9 +158,7 @@
   <div id="player"></div>
 
   <div id="overlay-end" class="overlay">
-    <p>
-      Vond je dit te gek? Volg ons om op de hoogte te blijven!
-    </p>
+    <p>Vond je dit te gek? Volg ons om op de hoogte te blijven!</p>
 
     <div class="listen-buttons">
       <a
@@ -211,20 +198,17 @@
         <div class="button">Like</div>
       </a>
     </div>
-
   </div>
-
 </div>
 
 <script>
-
-  checkOrientation()
+  checkOrientation();
   window.addEventListener("resize", checkOrientation);
 
   // 2. This code loads the IFrame Player API code asynchronously.
-  var tag = document.createElement('script');
+  var tag = document.createElement("script");
   tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
+  var firstScriptTag = document.getElementsByTagName("script")[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
   // 3. This function creates an <iframe> (and YouTube player)
@@ -232,24 +216,23 @@
   var player;
   var iframe;
   function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      videoId: 'D_9uSH5_Yo8',
+    player = new YT.Player("player", {
+      videoId: "D_9uSH5_Yo8",
       playerVars: {
         // controls: 0,
         modestbranding: 1,
-        rel: 0 //show only related videos from own channel
-
+        rel: 0, //show only related videos from own channel
       },
       events: {
-        'onReady': onPlayerReady,
-        'onStateChange': onPlayerStateChange
-      }
+        onReady: onPlayerReady,
+        onStateChange: onPlayerStateChange,
+      },
     });
   }
 
   // 4. The API will call this function when the video player is ready.
   function onPlayerReady(event) {
-    iframe = document.getElementById('player');
+    iframe = document.getElementById("player");
   }
 
   // 5. The API calls this function when the player's state changes.
@@ -257,73 +240,71 @@
   //    the player should play for six seconds and then stop.
   function onPlayerStateChange(event) {
     if (event.data == YT.PlayerState.ENDED) {
-      this.showEndOverlay()
+      this.showEndOverlay();
     }
   }
 
   function startVideo() {
     player.playVideo();
     requestFullScreen();
-    hideOverlay('overlay-start')
+    hideOverlay("overlay-start");
   }
 
   function stopVideo() {
     player.stopVideo();
   }
 
-  function requestFullScreen(){
-
-    var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+  function requestFullScreen() {
+    var requestFullScreen =
+      iframe.requestFullScreen ||
+      iframe.mozRequestFullScreen ||
+      iframe.webkitRequestFullScreen;
     if (requestFullScreen) {
       requestFullScreen.bind(iframe)();
     }
-
   }
 
-  function endFullScreen(){
-
+  function endFullScreen() {
     document.exitFullscreen();
-
   }
 
-  function showEndOverlay(){
+  function showEndOverlay() {
     endFullScreen();
-    showOverlay('overlay-end')
+    showOverlay("overlay-end");
   }
 
   // Orientation
 
-  function checkOrientation(){
+  function checkOrientation() {
     var w = window.innerWidth;
     var h = window.innerHeight;
-    if (w < h){
+    if (w < h) {
       showOrientationWarning();
     } else {
-      hideOverlay('overlay-orientation');
+      hideOverlay("overlay-orientation");
     }
   }
 
   function showOrientationWarning() {
-    
-    showOverlay('overlay-orientation');
+    showOverlay("overlay-orientation");
 
     // auto hide after a while
     setTimeout(() => {
-      hideOverlay('overlay-orientation');
-    }, 10000)
+      hideOverlay("overlay-orientation");
+    }, 10000);
   }
 
-  function showOverlay(id){
+  function showOverlay(id) {
     var overlay = document.getElementById(id);
-    overlay.classList.add('visible');
+    overlay.classList.add("visible");
   }
 
-  function hideOverlay(id){
+  function hideOverlay(id) {
     var overlay = document.getElementById(id);
-    overlay.classList.remove('visible');
+    overlay.classList.remove("visible");
   }
-
 </script>
+
 
         </div></body>
 </html>
